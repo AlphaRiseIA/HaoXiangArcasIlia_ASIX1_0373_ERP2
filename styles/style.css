@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef1f5;
+    color: #000000;
+    line-height: 1.7;
+    margin-left: 220px;
+}
+
+header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.85;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #000000;
+    padding-top: 100px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 0 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+    border-left: 4px solid #fff;
+    padding-left: 16px;
+}
+
+section {
+    background: white;
+    margin: 40px auto;
+    padding: 40px 30px;
+    max-width: 900px;
+    border-radius: 0;
+    box-shadow: none;
+    animation: fadeInUp 0.6s ease-out both;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000000;
+    border-left: 5px solid #000000;
+    padding-left: 15px;
+}
+
+section h3 {
+    margin-top: 25px;
+    color: #000000;
+    font-size: 1.3em;
+}
+
+ol, ul {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    border-radius: 0;
+    margin: 20px 0;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    body {
+        margin-left: 0;
+    }
+
+    header, section {
+        margin-left: 0;
+    }
+}

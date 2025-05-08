@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajo ERP Odoo</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#instalacion">Instalación</a></li>
+        <li><a href="#backup">Backup y Restauración</a></li>
+        <li><a href="#inventario">Módulo de Inventario</a></li>
+        <li><a href="#gastos">Módulo de Gastos</a></li>
+    </ul>
+</nav>
+
+<section id="instalacion">
+    <h2>Instalación odoo</h2>
+    <p>Entramos a este enlace <a href="https://www.odoo.com/es_ES/page/download" target="_blank">https://www.odoo.com/es_ES/page/download</a> y nos llevará a esta página</p>
+    <img src="img/1.png" alt="1">
+    <p>Nos vamos en el apartado de Odoo 16 y descargamos el Windows Community</p>
+    <img src="img/2.png" alt="2">
+    <p>Cuando le damos al instalar nos pedirá a rellenar esto</p>
+    <img src="img/3.png" alt="3">
+    <p>Comenzamos con el proceso de instalación</p>
+    <img src="img/4.png" alt="4">
+    <p>Seleccionamos el idioma</p>
+    <img src="img/5.png" alt="5">
+    <p>Le damos a Next para continuar</p>
+    <img src="img/6.png" alt="6">
+    <p>Le damos a I Agree</p>
+    <img src="img/7.png" alt="7">
+    <p>Seleccionamos Server y Database</p>
+    <img src="img/8.png" alt="8">
+    <p>Rellenamos los datos como podéis ver en la imagen</p>
+    <img src="img/9.png" alt="9">
+    <p>Le damos al instalar</p>
+    <img src="img/10.png" alt="10">
+    <p>Una vez que se acaba de instalar le damos a Next</p>
+    <img src="img/11.png" alt="11">
+    <p>Finalizamos</p>
+    <img src="img/12.png" alt="12">
+    <p>Ahora, desde el navegador, buscamos <code>localhost:8096</code> y nos llevará a esta página para crear la BBDD</p>
+    <img src="img/13.png" alt="13">
+    <p>Una vez creada la BBDD, accedemos a Odoo con nuestro correo y contraseña</p>
+    <img src="img/14.png" alt="14">
+</section>
+
+<section id="backup">
+    <h2>Backup</h2>
+    <p>Para hacer el backup tenemos que acceder a <code>http://localhost:8069/web/database/manager</code> y pulsar “Backup”</p>
+    <img src="img/15.png" alt="15">
+    <p>Después nos aparecerá el panel para hacer el backup donde ponemos la Master Password y seleccionamos ZIP</p>
+    <img src="img/16.png" alt="16">
+    <p>Para restaurar, volvemos al mismo panel, pulsamos “Restore”, insertamos la Master Password, elegimos el ZIP y escribimos el nombre de la nueva BBDD</p>
+    <img src="img/17.png" alt="17">
+</section>
+
+<section id="inventario">
+    <h2>Módulo de inventario</h2>
+    <p>Esta es la página de introducción al módulo</p>
+    <img src="img/18.png" alt="18">
+    <p>Un módulo de inventario es esencial en la mayoría de PYMEs para gestionar productos físicos, controlar gastos y mejorar la logística</p>
+    <p>Para instalarlo, accedemos al panel de módulos, lo buscamos y pulsamos “Instalar”</p>
+    <img src="img/19.png" alt="19">
+    <p>Las funcionalidades del módulo son:</p>
+    <ul>
+        <li>Dar de alta productos con información relevante</li>
+        <li>Gestión de entradas, salidas y transferencias internas</li>
+        <li>Ajustes de inventario para actualizar cantidades manualmente</li>
+        <li>Declarar ubicaciones físicas para mejor control</li>
+    </ul>
+    <img src="img/20.png" alt="20">
+    <p>Para dar de alta un producto, accedemos a “Productos” y pulsamos “Nuevo”</p>
+    <img src="img/21.png" alt="21">
+    <p>Aquí configuramos nombre, tipo, precio, cantidad, etc.</p>
+    <img src="img/22.png" alt="22">
+    <p>También podemos definir políticas de envío y responsable</p>
+    <img src="img/23.png" alt="23">
+    <p>Podemos añadir notas internas</p>
+    <img src="img/24.png" alt="24">
+    <p>Y personalizar etiquetas de envío</p>
+    <img src="img/25.png" alt="25">
+</section>
+
+<section id="gastos">
+    <h2>Módulo de Gastos</h2>
+    <p>La aplicación de Gastos en Odoo permite gestionar y reembolsar gastos de empleados de forma eficiente. Ofrece:</p>
+    <ul>
+        <li>Registro de gastos con comprobantes</li>
+        <li>Flujo de aprobación</li>
+        <li>Reembolsos automáticos</li>
+        <li>Integración contable</li>
+        <li>Informes por empleado o proyecto</li>
+        <li>Integración con Proyectos y Ventas</li>
+    </ul>
+    <p>Buscamos la aplicación Gastos y la activamos</p>
+    <img src="img/26.png" alt="26">
+    <p>Entramos al módulo y pulsamos “Nuevo”</p>
+    <img src="img/27.png" alt="27">
+    <p>Rellenamos título, categoría, importe, empleado y adjuntamos recibo</p>
+    <img src="img/28.png" alt="28">
+    <p>Cuando todo esté, clic en “Crear informe”</p>
+    <img src="img/29.png" alt="29">
+    <p>Enviamos el informe al Gerente</p>
+    <img src="img/30.png" alt="30">
+    <p>El Gerente revisa y aprueba o rechaza el gasto</p>
+    <img src="img/31.png" alt="31">
+    <p>Pulsamos “Registrar asientos contables” para integrarlo en contabilidad</p>
+    <img src="img/32.png" alt="32">
+    <p>Pulsamos “Registrar pago” y seleccionamos la forma de pago</p>
+    <img src="img/33.png" alt="33">
+    <p>Vemos el gasto marcado como pagado</p>
+    <img src="img/34.png" alt="34">
+    <p>Vista de lista de gastos con estado “Pagado”</p>
+    <img src="img/35.png" alt="35">
+</section>
+
+</body>
+</html>
